@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TraderPilot Dashboard</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; background:#f6f8fb; color:#0f172a; }
+    header { background:#070b12; color:white; padding:18px 32px; display:flex; justify-content:space-between; }
+    a { color:inherit; text-decoration:none; margin-left:18px; }
+    .container { padding:28px; }
+    .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .card { background:white; border-radius:14px; padding:22px; box-shadow:0 2px 8px #0001; }
+    .value { font-size:30px; font-weight:700; }
+    .green { color:#16a34a; }
+    .red { color:#dc2626; }
+    .grid { display:grid; grid-template-columns:2fr 1fr; gap:18px; margin-top:18px; }
+    .panel { background:white; border-radius:14px; padding:22px; box-shadow:0 2px 8px #0001; }
+    .chart { height:220px; display:flex; align-items:end; gap:12px; border-bottom:1px solid #ddd; }
+    .bar { width:45px; border-radius:8px 8px 0 0; }
+    table { width:100%; border-collapse:collapse; margin-top:12px; }
+    th,td { padding:12px; border-bottom:1px solid #e5e7eb; text-align:left; }
+    .calendar { display:grid; grid-template-columns:repeat(7,1fr); gap:8px; }
+    .day { background:#f1f5f9; padding:14px; border-radius:10px; min-height:55px; }
+  </style>
+</head>
+<body>
+<header>
+  <strong>TraderPilot</strong>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="cards">
+    <div class="card"><p>Total PnL</p><div class="value green">+$1,245</div></div>
+    <div class="card"><p>Win Rate</p><div class="value">62%</div></div>
+    <div class="card"><p>Profit Factor</p><div class="value">1.84</div></div>
+    <div class="card"><p>Avg Trade</p><div class="value green">+$18.40</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Daily PnL</h2>
+      <div class="chart">
+        <div class="bar green" style="height:90px;background:#22c55e"></div>
+        <div class="bar red" style="height:45px;background:#ef4444"></div>
+        <div class="bar green" style="height:150px;background:#22c55e"></div>
+        <div class="bar green" style="height:120px;background:#22c55e"></div>
+        <div class="bar red" style="height:70px;background:#ef4444"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Calendar</h2>
+      <div class="calendar">
+        <div class="day green">+120</div><div class="day red">-45</div><div class="day green">+230</div>
+        <div class="day">0</div><div class="day red">-80</div><div class="day green">+160</div><div class="day">0</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:18px">
+    <h2>Recent Trades</h2>
+    <table>
+      <tr><th>Symbol</th><th>Side</th><th>PnL</th><th>Volume</th><th>Status</th></tr>
+      <tr><td>XAUUSD</td><td>Long</td><td class="green">+$120</td><td>10</td><td>Closed</td></tr>
+      <tr><td>US500</td><td>Short</td><td class="red">-$45</td><td>1.2</td><td>Closed</td></tr>
+      <tr><td>EURUSD</td><td>Long</td><td class="green">+$230</td><td>5</td><td>Closed</td></tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
