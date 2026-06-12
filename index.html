@@ -1,12 +1,141 @@
-TraderPilot
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TraderPilot | Trading Journal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #070b12;
+      color: white;
+    }
 
-The Professional Trading Journal for cTrader
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 24px;
+    }
 
-[ Connect cTrader ]
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
 
-✓ Automatic trade import
-✓ Performance analytics
-✓ Equity curve
-✓ Trading calendar
-✓ Profit factor tracking
-✓ Win rate analysis
+    .badge {
+      color: #22c55e;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 64px;
+      margin: 0;
+      line-height: 1.05;
+    }
+
+    p {
+      color: #aab4c2;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 620px;
+    }
+
+    .buttons {
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 12px;
+    }
+
+    .primary {
+      background: #22c55e;
+      color: #07100b;
+    }
+
+    .secondary {
+      border: 1px solid #334155;
+      color: white;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .footer {
+      border-top: 1px solid #1e293b;
+      padding: 24px;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="container hero">
+    <section>
+      <div class="badge">cTrader Trading Journal</div>
+
+      <h1>TraderPilot</h1>
+
+      <p>
+        A professional trading journal built for cTrader traders.
+        Automatically sync trades, track performance, review your edge,
+        and improve your consistency.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="#">Connect cTrader</a>
+        <a class="btn secondary" href="#features">View Features</a>
+      </div>
+
+      <div class="features" id="features">
+        <div class="card">
+          <h3>Auto-Sync Trades</h3>
+          <p>Connect your cTrader account and import trading history automatically.</p>
+        </div>
+
+        <div class="card">
+          <h3>Performance Analytics</h3>
+          <p>Track PnL, win rate, profit factor, drawdown, and average trade.</p>
+        </div>
+
+        <div class="card">
+          <h3>Trading Calendar</h3>
+          <p>See profitable and losing days clearly with a visual PnL calendar.</p>
+        </div>
+
+        <div class="card">
+          <h3>Trade Review</h3>
+          <p>Analyze every trade, improve discipline, and build better habits.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 TraderPilot. Built for traders who review, improve, and execute.
+  </footer>
+</body>
+</html>
