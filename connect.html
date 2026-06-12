@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Connect Broker | TraderPilot</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; background:#070b12; color:white; }
+    header { padding:22px 40px; display:flex; justify-content:space-between; border-bottom:1px solid #1f2937; }
+    a { color:white; text-decoration:none; margin-left:18px; }
+    .container { max-width:1100px; margin:auto; padding:60px 24px; }
+    .badge { color:#22c55e; font-weight:700; }
+    h1 { font-size:52px; margin-bottom:12px; }
+    p { color:#cbd5e1; font-size:18px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin-top:40px; }
+    .card { background:#111827; border:1px solid #1f2937; border-radius:18px; padding:24px; }
+    .card button { width:100%; padding:14px; border:0; border-radius:12px; font-weight:700; cursor:pointer; }
+    .active { background:#22c55e; color:#03140a; }
+    .disabled { background:#334155; color:#94a3b8; cursor:not-allowed; }
+  </style>
+</head>
+<body>
+<header>
+  <strong>TraderPilot</strong>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/dashboard.html">Dashboard</a>
+    <a href="/connect.html">Connect Broker</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="badge">Broker Connections</div>
+  <h1>Connect Your Trading Account</h1>
+  <p>
+    Choose your trading platform. cTrader will be the first integration,
+    with more brokers and platforms coming soon.
+  </p>
+
+  <section class="grid">
+    <div class="card">
+      <h3>cTrader</h3>
+      <p>Connect using cTrader Open API.</p>
+      <button class="active">Connect cTrader</button>
+    </div>
+
+    <div class="card">
+      <h3>MetaTrader 4</h3>
+      <p>Import trades from MT4 accounts.</p>
+      <button class="disabled">Coming Soon</button>
+    </div>
+
+    <div class="card">
+      <h3>MetaTrader 5</h3>
+      <p>Import trades from MT5 accounts.</p>
+      <button class="disabled">Coming Soon</button>
+    </div>
+
+    <div class="card">
+      <h3>TradeLocker</h3>
+      <p>Connect prop-firm trading accounts.</p>
+      <button class="disabled">Coming Soon</button>
+    </div>
+
+    <div class="card">
+      <h3>Binance</h3>
+      <p>Crypto trading journal integration.</p>
+      <button class="disabled">Coming Soon</button>
+    </div>
+
+    <div class="card">
+      <h3>Bybit</h3>
+      <p>Crypto derivatives tracking.</p>
+      <button class="disabled">Coming Soon</button>
+    </div>
+  </section>
+</main>
+</body>
+</html>
